@@ -54,6 +54,7 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpstrCm
     // path already, since we launch WebKit2WebProcess.exe via CreateProcess with lpCurrentDirectory
     // set to 0. We want both the WebKit client app DLL path and the WebKit directory DLL path in
     // the DLL search order, and we want the current directory set to the WebKit client app path.
+    //added for test - Yaarit
     ::SetDllDirectoryW(webKitPath);
 
     ::PathAppendW(webKitPath, webKitDLLName);
